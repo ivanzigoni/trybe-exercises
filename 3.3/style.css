@@ -13,6 +13,7 @@ div:hover {
 }
 :nth-child(5) {
     background-color: blue;
+    block-size: 50px;
 
 }
 :nth-child(6) {
@@ -22,4 +23,7 @@ div:hover {
 :nth-child(7) {
     background-color: yellow;
 
+}
+div:nth-child(odd) {
+    font-style: italic;
 }
