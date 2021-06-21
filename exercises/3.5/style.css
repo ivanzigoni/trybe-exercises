@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+
+}
+
+  li {
+    list-style: none;
+}
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    
+    
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    display: inline-block;
+    
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    display: inline-block
+    
+  }
+  li {
+      display: inline-block;
+  }
