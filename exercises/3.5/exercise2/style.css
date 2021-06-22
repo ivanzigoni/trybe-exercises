@@ -1,0 +1,107 @@
+.information-table {
+    border-collapse: collapse;
+}
+
+html {
+    max-height: 1px;
+}
+
+body {
+    background-color: rgb(208, 240, 238);
+
+}
+
+nav {
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+h1 {
+    text-align: center;
+}
+
+.introduction {
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+tr th {
+    text-align: justify;
+    border: 1px solid lightblue;
+    
+}
+
+tr td {
+    text-align: right;
+    border: 1px solid lightblue;
+    font-style: italic;
+}
+
+.italic, .tablehead {
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-left: 10px;
+
+}
+
+.curiosidades {
+    float: right;
+    position: relative; top: -570px;
+    margin-right:30px;
+}
+
+.curiosidadesleft {
+    float: left;
+    position: relative; top: -570px;
+    margin-left: 30px;
+}
+
+.article1 {
+    width: 250px;
+    height: auto;
+}
+
+.article2 {
+    width: 200px;
+    height: auto;
+}
+
+.article3 {
+    width: 250px;
+    height: auto;
+}
+
+.article4 {
+    width: 200px;
+    height: auto;
+}
+
+.imageart1 {
+    width: 150px;
+    height: 100%;
+}
+
+.imageart3 {
+    width:100%;
+    height:200px;
+    text-align: center;
+}
+
+.imageart4 {
+    width: 150px;
+    height: 100%;
+    text-align: center;
+}
