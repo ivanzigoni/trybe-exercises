@@ -7,6 +7,11 @@ for (let i = 0; i < numbers.length; i += 1){
 
 media = Math.floor(sum / numbers.length)
 
+if (media > 20) {
+    console.log('value greater than 20')
+} else if (media < 20) {
+    console.log('value less than 20')
+}
 
 console.log(sum)
 console.log(media)
