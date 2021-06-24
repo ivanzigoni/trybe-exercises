@@ -1,13 +1,13 @@
-let salarioBruto = 5000;
+let salarioBruto = 1000;
 let salarioBase;
-let salarioInss;
 let salarioLiquido;
+let salarioInss;
 
 if (salarioBruto <= 1556.94) {
     let aliquotaInss = salarioBruto / 100 * 8;
     salarioBase = salarioBruto - aliquotaInss;
 } else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
-    let aliquotaInss = salarioBruto / 100 * 9
+    let aliquotaInss = salarioBruto / 100 * 9;
     salarioBase = salarioBruto - aliquotaInss;
 } else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
     let aliquotaInss = salarioBruto / 100 * 11;
@@ -18,7 +18,7 @@ if (salarioBruto <= 1556.94) {
 }
 
 if (salarioBase <= 1903.98) {
-    salarioBase = salarioLiquido;
+    salarioLiquido = salarioBase;
 } else if (salarioBase >= 1903.99 && salarioBase <= 2826.85) {
     let aliquotaIr = salarioBase / 100 * 7.5 - 142.80;
     salarioLiquido = salarioBase - aliquotaIr;
@@ -32,5 +32,6 @@ if (salarioBase <= 1903.98) {
     let aliquotaIr = salarioBase / 100 * 27.5 - 869.36;
     salarioLiquido = salarioBase - aliquotaIr;
 }
+
 
 console.log(salarioLiquido)
