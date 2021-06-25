@@ -1,14 +1,9 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let impar = [];
+let numbers = [500, 9, 2, 19, 70, 8, 700, 4, 35, 27];
+let lowest = numbers[0];
 
 for (let i = 0; i < numbers.length; i += 1) {
-    if (numbers[i]%2 >= 1) {
-        impar.push(numbers[i])
+    if ( numbers[i] < lowest ) {
+        lowest = numbers[i]
     }
 }
-
-if (impar.length >= 1) {
-    console.log("são:", impar.length, "números")
-} else if (impar.length < 1) {
-    console.log("nenhum valor ímpar encontrado")
-}
+console.log(lowest)
