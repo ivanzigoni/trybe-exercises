@@ -1,10 +1,14 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let bigger = 0;
+let impar = [];
 
 for (let i = 0; i < numbers.length; i += 1) {
-    if (numbers[i] > bigger) {
-        bigger = numbers[i]
+    if (numbers[i]%2 >= 1) {
+        impar.push(numbers[i])
     }
 }
 
-console.log(bigger)
+if (impar.length >= 1) {
+    console.log("são:", impar.length, "números")
+} else if (impar.length < 1) {
+    console.log("nenhum valor ímpar encontrado")
+}
