@@ -8,3 +8,7 @@ let info = {
 
   info.recorrente = "Sim";
   console.log(info.recorrente)
+
+  for (let property in info) {
+      console.log(property)
+  }
