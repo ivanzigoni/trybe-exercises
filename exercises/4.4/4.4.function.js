@@ -1,17 +1,13 @@
-let biggerNumber = () => {
-    let numbers = [];
-    let bigger = 0;
-    for (let i = 0; i < 10; i += 1) {
-        numbers.push(Math.floor(Math.random() * 100))
-    }
-    console.log(numbers)
-    for (let i = 0; i < numbers.length; i += 1){
-        if (numbers[i] > bigger) {
-            bigger = numbers[i]
+let nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'OIJEOSAJEOIJSAEIOSAOEJOA', 'Cairo', 'Joana'];
+let biggest = "";
+
+let biggestName = () => {
+    for (let i = 0; i < nomes.length; i += 1){
+        if (nomes[i].length > biggest.length) {
+            biggest = nomes[i]
         }
     }
-    console.log(bigger)
 }
 
-biggerNumber()
-
+biggestName()
+console.log(biggest)
