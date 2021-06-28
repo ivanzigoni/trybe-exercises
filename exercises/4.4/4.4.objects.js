@@ -12,3 +12,7 @@ let info = {
   for (let property in info) {
       console.log(property)
   }
+
+  for (let property in info) {
+      console.log(info[property])
+  }
