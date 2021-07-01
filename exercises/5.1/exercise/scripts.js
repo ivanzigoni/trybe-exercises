@@ -3,7 +3,7 @@
     - document.getElementById()
     - document.getElementsByClassName()
     - document.getElementsByTagName()
-    1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+    1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício) 
     2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
     3. Crie uma função que mude a cor do quadrado vermelho para branco.
     4. Crie uma função que corrija o texto da tag <h1>.
@@ -12,10 +12,15 @@
 */
 
 const paragraph = document.getElementsByTagName("p")[1]
-
+const divToTurnYellow = document.getElementsByClassName("main-content")[0]
 
 function nextTwoYears(param) {
     param.innerText = "(Não gaste tempo pensando no texto e sim realizando o exercício)"
 }
 
+function changeToYellow(param1) {
+    param1.style.backgroundColor = "#333"
+}
+
 nextTwoYears(paragraph)
+changeToYellow(divToTurnYellow)
