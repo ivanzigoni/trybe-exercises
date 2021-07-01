@@ -13,14 +13,20 @@
 
 const paragraph = document.getElementsByTagName("p")[1]
 const divToTurnYellow = document.getElementsByClassName("main-content")[0]
+const divToTurnWhite = document.getElementsByClassName("center-content")[0]
 
 function nextTwoYears(param) {
     param.innerText = "(Não gaste tempo pensando no texto e sim realizando o exercício)"
 }
 
-function changeToYellow(param1) {
-    param1.style.backgroundColor = "#333"
+function changeToYellow(param) {
+    param.style.backgroundColor = "#333"
+}
+
+function changeToWhite(param) {
+    param.style.backgroundColor = "white"
 }
 
 nextTwoYears(paragraph)
 changeToYellow(divToTurnYellow)
+changeToWhite(divToTurnWhite)
