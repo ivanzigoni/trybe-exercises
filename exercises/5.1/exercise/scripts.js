@@ -14,6 +14,7 @@
 const paragraph = document.getElementsByTagName("p")[1]
 const divToTurnYellow = document.getElementsByClassName("main-content")[0]
 const divToTurnWhite = document.getElementsByClassName("center-content")[0]
+const correctingText = document.getElementsByClassName("title")[0]
 
 function nextTwoYears(param) {
     param.innerText = "(Não gaste tempo pensando no texto e sim realizando o exercício)"
@@ -27,6 +28,11 @@ function changeToWhite(param) {
     param.style.backgroundColor = "white"
 }
 
+function textCorrector(param) {
+    param.innerText = "Exercício 5.1 - JavaScript"
+}
+
 nextTwoYears(paragraph)
 changeToYellow(divToTurnYellow)
 changeToWhite(divToTurnWhite)
+textCorrector(correctingText)
