@@ -15,7 +15,7 @@ const paragraph = document.getElementsByTagName("p")[1]
 const divToTurnYellow = document.getElementsByClassName("main-content")[0]
 const divToTurnWhite = document.getElementsByClassName("center-content")[0]
 const correctingText = document.getElementsByClassName("title")[0]
-const testingUp = Array.from(document.getElementsByTagName("p"))
+const testingUp = document.getElementsByTagName("p")
 
 
 
@@ -45,8 +45,15 @@ function toUpp (param) {
     
 }
 
+function exibit (param) {
+    for (let i = 0; i < param.length; i += 1) {
+        console.log(param[i].innerText)
+    }
+}
+
 nextTwoYears(paragraph)
 changeToYellow(divToTurnYellow)
 changeToWhite(divToTurnWhite)
 textCorrector(correctingText)
 toUpp(testingUp)
+exibit(testingUp)
