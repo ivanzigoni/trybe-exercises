@@ -15,9 +15,15 @@ const paragraph = document.getElementsByTagName("p")[1]
 const divToTurnYellow = document.getElementsByClassName("main-content")[0]
 const divToTurnWhite = document.getElementsByClassName("center-content")[0]
 const correctingText = document.getElementsByClassName("title")[0]
+const testingUp = Array.from(document.getElementsByTagName("p"))
+
+
+
 
 function nextTwoYears(param) {
-    param.innerText = "(Não gaste tempo pensando no texto e sim realizando o exercício)"
+     param.innerText = "(Não gaste tempdasdasdaso pensando no texto e sim realizando o exercício)"
+    
+    
 }
 
 function changeToYellow(param) {
@@ -32,7 +38,15 @@ function textCorrector(param) {
     param.innerText = "Exercício 5.1 - JavaScript"
 }
 
+function toUpp (param) {
+    for (let i = 0; i < param.length; i += 1) {
+        param[i].innerText = param[i].innerText.toUpperCase()
+    }
+    
+}
+
 nextTwoYears(paragraph)
 changeToYellow(divToTurnYellow)
 changeToWhite(divToTurnWhite)
 textCorrector(correctingText)
+toUpp(testingUp)
