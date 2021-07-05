@@ -24,3 +24,45 @@ const thirdChildFromOndeCeTa = document.querySelector('#elementoOndeVoceEsta').n
 
 // Agora acesse o terceiroFilho a partir de pai
 const thirdChildFromPai = document.querySelector("#pai").childNodes[5]
+
+// Crie um irmão para elementoOndeVoceEsta .
+const creatingDiv = document.createElement('div')
+const siblingForOndeCeTa = document.querySelector('#pai')
+siblingForOndeCeTa.appendChild(creatingDiv)
+creatingDiv.innerText = 'testeste'
+
+// Crie um filho para elementoOndeVoceEsta .
+
+const childForOndeCeTa = document.querySelector('#elementoOndeVoceEsta')
+childForOndeCeTa.appendChild(creatingDiv)
+
+// primeiroFilhoDoFilho
+
+const fiDoFi = document.querySelector("#primeiroFilhoDoFilho")
+fiDoFi.appendChild(creatingDiv)
+
+// A partir desse filho criado, acesse terceiroFilho
+
+const fiDoFiDoFi = document.querySelector("#primeiroFilhoDoFilho").parentElement.nextElementSibling
+
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho 
+
+// const firstChild = document.querySelector("#primeiroFilho")
+// firstChild.remove()
+// const thirdChild = document.querySelector('#terceiroFilho')
+// thirdChild.remove()
+// const lastChild = document.querySelector('#segundoEUltimoFilhoDoFilho')
+// lastChild.remove()
+// const forthChild = document.querySelector('#quartoEUltimoFilho')
+// forthChild.remove()
+
+const teste = [document.querySelector("#primeiroFilho"), document.querySelector('#terceiroFilho'), document.querySelector('#segundoEUltimoFilhoDoFilho'), document.querySelector('#quartoEUltimoFilho')];
+
+for (let i = 0; i < teste.length; i += 1) {
+    teste[i].remove()
+}
+
+
+
+
+
