@@ -32,8 +32,14 @@ function createDaysOfTheWeek() {
     listItem.textContent = [i];
     masterUl.appendChild(listItem);
     
-    
-    
   }
 
 
+function settingHolidays (string) {
+  let newButton = document.createElement('button');
+  let div = document.querySelector(".buttons-container");
+  newButton.setAttribute("id", "btn-holiday");
+  newButton.textContent = string
+  div.appendChild(newButton)
+}
+settingHolidays('Feriados')
