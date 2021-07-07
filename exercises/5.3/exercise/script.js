@@ -43,3 +43,36 @@ function settingHolidays (string) {
   div.appendChild(newButton)
 }
 settingHolidays('Feriados')
+
+
+document.getElementById('btn-holiday').addEventListener("click", holidayBackgroundColor);
+
+let onclick = false;
+
+function holidayBackgroundColor() {
+  if (onclick === false) {
+    let highlightingDays = document.getElementsByClassName('holiday');
+    for (let i = 0; i < highlightingDays.length; i += 1) {
+      highlightingDays[i].style.backgroundColor = "green";
+      onclick = true;
+    }
+  } else if (onclick === true) {
+    let highlightingDays = document.getElementsByClassName('holiday');
+    for (let i = 0; i < highlightingDays.length; i += 1) {
+      highlightingDays[i].style.backgroundColor = "rgb(238,238,238)";
+      onclick = false;
+    }
+  }
+
+}
+
+// document.getElementById('btn-holiday').addEventListener("click", holidayBackgroundColorReverse);
+// function holidayBackgroundColorReverse () {
+//   if (onclick === true) {
+//   let highlightingDays = document.getElementsByClassName('holiday');
+//   for (let i = 0; i < highlightingDays.length; i += 1) {
+//     highlightingDays[i].style.backgroundColor = "blue";
+//   }
+//   }
+//   onclick = false;
+// }
