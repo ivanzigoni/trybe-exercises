@@ -50,6 +50,7 @@ document.getElementById('btn-holiday').addEventListener("click", holidayBackgrou
 let onclick = false;
 
 function holidayBackgroundColor() {
+  
   if (onclick === false) {
     let highlightingDays = document.getElementsByClassName('holiday');
     for (let i = 0; i < highlightingDays.length; i += 1) {
@@ -63,16 +64,13 @@ function holidayBackgroundColor() {
       onclick = false;
     }
   }
-
 }
 
-// document.getElementById('btn-holiday').addEventListener("click", holidayBackgroundColorReverse);
-// function holidayBackgroundColorReverse () {
-//   if (onclick === true) {
-//   let highlightingDays = document.getElementsByClassName('holiday');
-//   for (let i = 0; i < highlightingDays.length; i += 1) {
-//     highlightingDays[i].style.backgroundColor = "blue";
-//   }
-//   }
-//   onclick = false;
-// }
+function settingFridays (string) {
+  let newButton = document.createElement('button');
+  let div = document.querySelector(".buttons-container");
+  newButton.setAttribute("id", "btn-friday");
+  newButton.textContent = string;
+  div.appendChild(newButton);
+}
+settingFridays('Sexta-feira')
