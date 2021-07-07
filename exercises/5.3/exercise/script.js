@@ -109,3 +109,14 @@ function zoomingDays(e) {
     zoomingOn = false;
   }
 }
+
+
+document.querySelector("#btn-add").addEventListener("click", addToTasksList);
+
+function addToTasksList () {
+  const inputCompromissos = document.querySelector("#task-input").value;
+  const divToAppend = document.querySelector(".my-tasks")
+  let newTask = document.createElement('p');
+  newTask.innerText = inputCompromissos;
+  divToAppend.appendChild(newTask)
+}
