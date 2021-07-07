@@ -29,7 +29,7 @@ function createDaysOfTheWeek() {
       listItem.classList.add('friday');
     }
 
-    listItem.textContent = [i];
+    listItem.textContent = dezDaysList[i];
     masterUl.appendChild(listItem);
     
   }
@@ -74,3 +74,28 @@ function settingFridays (string) {
   div.appendChild(newButton);
 }
 settingFridays('Sexta-feira')
+
+
+document.getElementById('btn-friday').addEventListener("click", fridayTextAltering);
+
+let fridayClick = false;
+function fridayTextAltering () {
+  
+
+  if (fridayClick === false) {
+    let fridays = document.getElementsByClassName("friday");
+    for (let i = 0; i < fridays.length; i += 1) {
+      fridays[i].textContent = 'SEXTOUBB';
+      fridayClick = true;
+    } 
+  } else if (fridayClick === true) {
+    let fridays = document.getElementsByClassName("friday");
+    const fridaysDays = [4, 11, 18, 25];
+    for (let i = 0; i < fridays.length; i += 1) {
+      fridays[i].textContent = fridaysDays[i];
+      fridayClick = false;
+    }
+  }
+
+  
+}
