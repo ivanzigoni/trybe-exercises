@@ -79,15 +79,13 @@ settingFridays('Sexta-feira')
 document.getElementById('btn-friday').addEventListener("click", fridayTextAltering);
 
 let fridayClick = false;
-function fridayTextAltering () {
-  
-
+function fridayTextAltering() {
   if (fridayClick === false) {
     let fridays = document.getElementsByClassName("friday");
     for (let i = 0; i < fridays.length; i += 1) {
       fridays[i].textContent = 'SEXTOUBB';
       fridayClick = true;
-    } 
+    }
   } else if (fridayClick === true) {
     let fridays = document.getElementsByClassName("friday");
     const fridaysDays = [4, 11, 18, 25];
@@ -96,6 +94,18 @@ function fridayTextAltering () {
       fridayClick = false;
     }
   }
+}
 
-  
+for (let i = 0; i < dezDaysList.length; i += 1) {
+document.getElementsByClassName('day')[i].addEventListener("click", zoomingDays)
+}
+zoomingOn = false;
+function zoomingDays(e) {
+  if (zoomingOn === false) {
+    e.target.style.fontSize = '35px';
+    zoomingOn = true;
+  } else if (zoomingOn === true) {
+    e.target.style.fontSize = '20px';
+    zoomingOn = false;
+  }
 }
