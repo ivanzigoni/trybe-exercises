@@ -120,3 +120,14 @@ function addToTasksList () {
   newTask.innerText = inputCompromissos;
   divToAppend.appendChild(newTask)
 }
+
+function coloringTasks (string) {
+  let newDiv = document.createElement('div');
+  let parentDiv = document.querySelector('.my-tasks');
+  newDiv.style.backgroundColor = string;
+
+  parentDiv.appendChild(newDiv);
+
+}
+
+coloringTasks('blue');
