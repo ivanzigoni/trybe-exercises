@@ -71,7 +71,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
-    flex-grow: 5px;
   }
 
   .teste {
@@ -88,6 +87,7 @@
     margin: 10px;
     list-style: none;
     flex-basis: 16%;
+    flex-grow: 1;
   }
   
   .aside-container {
