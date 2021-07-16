@@ -12,6 +12,7 @@
   .header-container {
     background-color: #5C687C;
     display: flex;
+    justify-content: space-around;
 
   }
   
@@ -28,6 +29,7 @@
     background-color: blue;
     flex-basis: 500px;
     order: 2;
+    flex-grow: 1;
   }
   
   .menu-container ul {
