@@ -57,7 +57,7 @@
     flex-direction: column;
     background-color: aqua;
     flex-basis: 700px;
-   
+    flex-grow: 10;
   }
   
   .movie-container h2 {
@@ -71,7 +71,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
-    flex-basis: 16%;
+    flex-grow: 5px;
+  }
+
+  .teste {
+    flex-grow: 3;
   }
   
   .card-container li {
@@ -80,10 +84,10 @@
     border: black solid 1px;
     display: flex;
     height: 150px;
-    width: 100px;
     justify-content: center;
     margin: 10px;
     list-style: none;
+    flex-basis: 16%;
   }
   
   .aside-container {
