@@ -49,22 +49,29 @@
   .main-container {
     display: flex;
     flex-wrap: wrap;
+   
   }
   
   .movie-container {
     display: flex;
     flex-direction: column;
+    background-color: aqua;
+    flex-basis: 700px;
+   
   }
   
   .movie-container h2 {
     margin: 40px 0;
     text-align: center;
+
   }
   
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: black;
+    flex-basis: 16%;
   }
   
   .card-container li {
@@ -73,6 +80,7 @@
     border: black solid 1px;
     display: flex;
     height: 150px;
+    width: 100px;
     justify-content: center;
     margin: 10px;
     list-style: none;
