@@ -8,14 +8,14 @@ Head file named after the block number (dot) module number. Inside, two folders 
 
 
 
-6.3
-_preparing<br>
-__index.html<br>
-__style.css<br>
-__script.js<br>
-_exercise<br>
-__index.html<br>
-__style.css<br>
-__script.js<br>
+6.3<br>
+__preparing<br>
+____index.html<br>
+____style.css<br>
+____script.js<br>
+__exercise<br>
+____index.html<br>
+____style.css<br>
+____script.js<br>
   <br>
   Which is a folder for block 6, module 3.
