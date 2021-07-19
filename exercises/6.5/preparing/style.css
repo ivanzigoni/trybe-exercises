@@ -54,7 +54,9 @@ body {
     width: 200px;
   }
   
- 
+  .card:nth-of-type(1) {
+    background-color: green;
+  }
   
   .card:nth-of-type(2) {
     background-color: #0255c2;
@@ -66,14 +68,12 @@ body {
 
   @media screen and (min-width: 500px) {
     .card:nth-of-type(1) {
-        background-color: #0fa36b;
         display: inline-block;
       }
   }
-/* 
-  @media screen and (min-width: 500px){
+
+  @media screen and (min-width: 600px) and (max-width: 1000px){
     .card:nth-of-type(2) {
-        background-color: white;
-        color: white;
+        display: inline-block;
     }
-  } */
+  }
