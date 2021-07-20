@@ -1,0 +1,63 @@
+body {
+    font-size: 20px;
+    margin: 50px;
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/* tela pequena */
+
+@media screen and (min-width: 1px) and (max-width: 560px) {
+    body {
+        background-color: cyan;
+    }
+}
+
+/* tela grande */
+
+@media screen and (min-width: 900px){
+    h1 {
+        
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        margin: 0 auto;
+        width: 1000px;
+        
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    figure {
+        width: 200px;
+        margin: 10px;
+        height: 100px;
+    }
+
+    img {
+        margin-bottom: 0px;
+    }
+
+    figcaption {
+        font-size: 18px;
+    }
+
+}
