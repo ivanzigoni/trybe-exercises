@@ -1,0 +1,8 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* O layout do livro já está bom considerando que é um livro? Pegadinha? */
