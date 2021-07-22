@@ -16,16 +16,22 @@
 // Crie uma função que receba uma frase e retorne qual a maior palavra.
 
 const frase = 'qual é a maior palavra dasdasdasdsadsa desta frase';
-let splittedStringArray = frase.split(' ')
-let largerWordLength = 0;
-let largerWord;
 
-for (let i = 0; i < splittedStringArray.length; i += 1) {
+function largerWordCounter(frase) {
+  let splittedStringArray = frase.split(' ')
+  let largerWordLength = 0;
+  let largerWord;
+
+  for (let i = 0; i < splittedStringArray.length; i += 1) {
     if (splittedStringArray[i].length > largerWordLength) {
-        largerWordLength = splittedStringArray[i].length;
-        largerWord = splittedStringArray[i];
+      largerWordLength = splittedStringArray[i].length;
+      largerWord = splittedStringArray[i];
     }
+  }
+
+  return largerWord;
+
 }
 
-console.log(largerWord)
+console.log(largerWordCounter(frase))
 
