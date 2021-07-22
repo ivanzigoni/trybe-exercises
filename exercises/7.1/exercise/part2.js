@@ -39,10 +39,27 @@
 
 const string = "aseks x sekok";
 
-function substituindo (string) {
+function substituindo(string) {
   return string.replace('x', 'teste');
-  
+
 }
 
-console.log(substituindo(string))
+substituindo(string)
+
+// Função 2 : Escreva uma função que vai receber a string retornada da Função 1 como parâmetro. Essa função deve concatenar as skills do array global à string que foi passada para a Função 2 via parâmetro. Você deve ordenar os skills em ordem alfabética. Sua função deve retornar essa nova string .
+
+const array = ['skilla', 'skillc', 'skilld', 'skille', 'skillb'];
+
+function skills() {
+  const myString = substituindo(string);
+  const sortedArray = array.sort();
+  let teste = `${myString}: `;
+  for (let i = 0; i < sortedArray.length; i += 1) {
+    teste += `
+${sortedArray[i]}`
+  }
+  return teste;
+}
+
+console.log(skills())
 
