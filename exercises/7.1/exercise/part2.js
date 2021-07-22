@@ -15,23 +15,34 @@
 
 // Crie uma função que receba uma frase e retorne qual a maior palavra.
 
-const frase = 'qual é a maior palavra dasdasdasdsadsa desta frase';
+// const frase = 'qual é a maior palavra dasdasdasdsadsa desta frase';
 
-function largerWordCounter(frase) {
-  let splittedStringArray = frase.split(' ')
-  let largerWordLength = 0;
-  let largerWord;
+// function largerWordCounter(frase) {
+//   let splittedStringArray = frase.split(' ')
+//   let largerWordLength = 0;
+//   let largerWord;
 
-  for (let i = 0; i < splittedStringArray.length; i += 1) {
-    if (splittedStringArray[i].length > largerWordLength) {
-      largerWordLength = splittedStringArray[i].length;
-      largerWord = splittedStringArray[i];
-    }
-  }
+//   for (let i = 0; i < splittedStringArray.length; i += 1) {
+//     if (splittedStringArray[i].length > largerWordLength) {
+//       largerWordLength = splittedStringArray[i].length;
+//       largerWord = splittedStringArray[i];
+//     }
+//   }
 
-  return largerWord;
+//   return largerWord;
 
+// }
+
+// console.log(largerWordCounter(frase))
+
+//Função 1 : Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string .
+
+const string = "aseks x sekok";
+
+function substituindo (string) {
+  return string.replace('x', 'teste');
+  
 }
 
-console.log(largerWordCounter(frase))
+console.log(substituindo(string))
 
