@@ -51,15 +51,33 @@
 // console.log(Object.keys(student2));
 
 
-const países = {
-  França: 'Paris',
-  Brasil: 'Brasília',
-  Espanha: 'Madrid',
-  Portugal: 'Lisboa',
+// const países = {
+//   França: 'Paris',
+//   Brasil: 'Brasília',
+//   Espanha: 'Madrid',
+//   Portugal: 'Lisboa',
+// };
+
+// const arrDeArr = Object.entries(países);
+
+// for (i in arrDeArr) {
+// 	console.log(`A capital do país ${arrDeArr[i][0]} é ${arrDeArr[i][1]}`)
+// }
+
+const person = {
+  name: 'Roberto',
 };
 
-const arrDeArr = Object.entries(países);
+const lastName = {
+  lastName: 'Silva',
+};
 
-for (i in arrDeArr) {
-	console.log(`A capital do país ${arrDeArr[i][0]} é ${arrDeArr[i][1]}`)
-}
+const clone = Object.assign({}, person, lastName);
+
+// console.log(clone)
+// console.log(lastName)
+
+const teste = 'teste';
+
+person.teste = 'eita'
+console.log(Object.keys(person))
