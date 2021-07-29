@@ -84,13 +84,13 @@ findKeyIndex(lesson1, 0);
 const verifyPair = (obj, key, value) => {
   for (i in obj) {
     if (i === key) {
-     if (obj[key] === value) {
-       return true;
-     } else {
-       return false;
-     }
+      if (obj[key] === value) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
-}
 }
 console.log(verifyPair(lesson1, 'turno', 'manhã'));
 
