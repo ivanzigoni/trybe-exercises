@@ -18,6 +18,7 @@ const employeCard = (nome, sobrenome) => {
     }
 }
 
+const teste = newEmployees(employeCard)
 
-
-console.log(newEmployees(employeCard))
+console.log(teste.id1)
+console.log(teste)
