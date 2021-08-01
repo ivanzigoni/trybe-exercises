@@ -67,29 +67,38 @@ const books = [
 
 const expectedResult = false;
 
-// function authorUnique() {
-//   let boo = true;
-// for (let i = 0; i < books.length; i += 1) {
-//   for (let k = i + 1; k < books.length; k += 1) {
-//     if (books[i].author.birthYear === books[k].author.birthYear) {
-//       boo = false;
-//     }
-//   }
-// }
-// return boo
-// }
-
 function authorUnique() {
   let boo = true;
-  const sorted = books.sort((a, b) => a.author.birthYear - b.author.birthYear)
-  const check = sorted.sort((a, b) => {
-    if (a.author.birthYear === b.author.birthYear) {
+for (let i = 0; i < books.length; i += 1) {
+  for (let k = i + 1; k < books.length; k += 1) {
+    if (books[i].author.birthYear === books[k].author.birthYear) {
       boo = false;
     }
-  })
-  return boo;
+  }
+}
+return boo
 }
 
+// function authorUnique() {
+//   let boo = true;
+//   const sorted = books.sort((a, b) => a.author.birthYear - b.author.birthYear)
+//   const check = sorted.sort((a, b) => {
+//     if (a.author.birthYear === b.author.birthYear) {
+//       boo = false;
+//     }
+//   })
+//   return boo;
+// }
+
+// function authorUnique() {
+//   let boo = true;
+//   const sorted = books.sort((a, b) => a.author.birthYear - b.author.birthYear).sort((a, b) => {
+//     if (a.author.birthYear === b.author.birthYear) {
+//       boo = false;
+//     }
+//   })
+//   return boo;
+// } also works but worse to read
 
 assert.strictEqual(authorUnique(), expectedResult);
 
