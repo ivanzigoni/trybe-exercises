@@ -70,31 +70,12 @@ const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName(array) {
   return array.find(e => {
-    return e.author.name.replace(/[^\d.-]/g, "") === '...'
+    return e.author.name.replace(/[^\d.-]/g, "") === '...';
   }).name;
 }
 
-// console.log(authorWith3DotsOnName(books))
-
-
 
 assert.deepStrictEqual(authorWith3DotsOnName(books), expectedResult);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const expectedResult = [
 //   'O Senhor dos Anéis',
