@@ -1,48 +1,44 @@
 // Desafio 10
 function techList(array, name) {
-  // seu código aqui
-  let sortedArray = array.sort();
-  let techObject = [];
-  if (array.length === 0) {
-    return "Vazio!";
-  }
-  for (let i = 0; i < sortedArray.length; i += 1) {
-    techObject.push({
-    'tech': sortedArray[i],
-    'name': name
+  if (array.length === 0) return "Vazio!";
+  const sortedArray = array.sort();  
+  return sortedArray.reduce((ac, e) => {
+    ac.push({
+      'tech': e,
+      'name': name
     })
-  }
-  return techObject;
+    return ac;
+  }, [])
 }
 
 // Desafio 11
 function generatePhoneNumber(array) {
   // seu código aqui
-  let checkingForRep = 0;    
-	let arrSaida = [];
-	let arrString = "";
+  let checkingForRep = 0;
+  let arrSaida = [];
+  let arrString = "";
   if (array.length === 0) {
     return "Array com tamanho incorreto.";
   }
-	for (let i = 0; i < array.length; i += 1){
-		if (array[i] > 9 || array[i] < 0) {
-			return "não é possível gerar um número de telefone com esses valores";
-		} else if (array.length != 11 || array.length === 0) {
-			return "Array com tamanho incorreto.";
-		}
-		for (let k = 0; k < array.length; k += 1){
-			if (array[i] === array[k]) {
-				checkingForRep += 1;
-			}
-			if (checkingForRep >= 3) {
-				return "não é possível gerar um número de telefone com esses valores";
-			}
-		}	
-		if (checkingForRep < 3) {
-			checkingForRep = 0;
-		}
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] > 9 || array[i] < 0) {
+      return "não é possível gerar um número de telefone com esses valores";
+    } else if (array.length != 11 || array.length === 0) {
+      return "Array com tamanho incorreto.";
+    }
+    for (let k = 0; k < array.length; k += 1) {
+      if (array[i] === array[k]) {
+        checkingForRep += 1;
+      }
+      if (checkingForRep >= 3) {
+        return "não é possível gerar um número de telefone com esses valores";
+      }
+    }
+    if (checkingForRep < 3) {
+      checkingForRep = 0;
+    }
   }
-  if(checkingForRep < 3) {
+  if (checkingForRep < 3) {
     arrSaida[0] = "(";
     arrSaida[1] = array[0];
     arrSaida[2] = array[1];
@@ -60,7 +56,7 @@ function generatePhoneNumber(array) {
     arrSaida[14] = array[10];
     arrJoined = arrSaida.join('');
     arrStringed = arrJoined.toString();
-    return arrStringed; 
+    return arrStringed;
   }
 }
 
@@ -78,23 +74,19 @@ function triangleCheck(lineA, lineB, lineC) {
 function hydrate(string) {
   // seu código aqui
   let numbersFromString = string.replace(/\D/g, "");
-  let cupsOfWater = 0;
-  let arrNumberStr = Array.from(numbersFromString);
-  let outputArray = [];
-  
-  for (let i = 0; i < arrNumberStr.length; i += 1) {
-    let integer = parseInt(arrNumberStr[i]);
+  let cupsOfWater = 0; 
+
+  for (let i = 0; i < numbersFromString.length; i += 1) {
+    let integer = parseInt(numbersFromString[i]);
     cupsOfWater += integer;
   }
 
-  if (cupsOfWater === 1) {
-    outputArray.push(cupsOfWater + " copo de água")
-  } else if (cupsOfWater > 1) {
-    outputArray.push(cupsOfWater + " copos de água")
-  }
-
-  return outputArray[0];
+  if (cupsOfWater === 1) return `${cupsOfWater} copo de água`;
+  if (cupsOfWater > 1) return `${cupsOfWater} copos de água`;
 }
+
+
+
 
 module.exports = {
   generatePhoneNumber,
