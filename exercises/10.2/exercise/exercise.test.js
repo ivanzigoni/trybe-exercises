@@ -7,26 +7,26 @@ const {
 
 
 
-// const uppercase = (str, callback) => {
-//   setTimeout(() => {
-//     callback(str.toUpperCase());
-//   }, 500);
-// };
+const uppercase = (str, callback) => {
+  setTimeout(() => {
+    callback(str.toUpperCase());
+  }, 500);
+};
 
 
-// describe('If function to uppercase words is working properly', () => {
+describe('If function to uppercase words is working properly', () => {
 
-//   it('should uppercase all letters', (done) => {
-//     try {
-//       uppercase('oi', checkResult => {
-//         expect(checkResult).toBe('OI');
-//         done();
-//       })
-//     } catch (e) {
-//       done(e);
-//     }
+  it('should uppercase all letters', (done) => {
+    try {
+      uppercase('oi', checkResult => {
+        expect(checkResult).toBe('OI');
+        done();
+      })
+    } catch (e) {
+      done(e);
+    }
 
-//   })
+  })
 
 // })
 
@@ -108,22 +108,22 @@ const {
 // });
 
 
-describe('Testando promise - findAnimalByName', () => {
-  describe('Quando existe o animal com o nome procurado', () => {
-    test('Retorne o objeto do animal', () => {
-      expect.assertions(1);
-      return getAnimal('Dorminhoco').then(animal => {
-        expect(animal).toEqual({ name: 'Dorminhoco', age: 1, type: 'Dog' });
-      });
-    });
-  });
+// describe('Testando promise - findAnimalByName', () => {
+//   describe('Quando existe o animal com o nome procurado', () => {
+//     test('Retorne o objeto do animal', () => {
+//       expect.assertions(1);
+//       return getAnimal('Dorminhoco').then(animal => {
+//         expect(animal).toEqual({ name: 'Dorminhoco', age: 1, type: 'Dog' });
+//       });
+//     });
+//   });
 
-  describe('Quando não existe o animal com o nome procurado', () => {
-    test('Retorna um erro', () => {
-      expect.assertions(1);
-      return getAnimal('Bob').catch(error =>
-        expect(error).toEqual('Nenhum animal com esse nome!')
-      );
-    });
-  });
-});
+//   describe('Quando não existe o animal com o nome procurado', () => {
+//     test('Retorna um erro', () => {
+//       expect.assertions(1);
+//       return getAnimal('Bob').catch(error =>
+//         expect(error).toEqual('Nenhum animal com esse nome!')
+//       );
+//     });
+//   });
+// });
