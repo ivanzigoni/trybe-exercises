@@ -6,15 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <div>
-      <button onClick={() => {
-        document.querySelector('#oi').style.backgroundColor = 'black';
-      }}>butão</button>
-      <p id='oi'>oi</p>
-      texto solto
-      {[1, 2, 3, 4, 'banadadadsana', '   ', 'lol']}
-    </div>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
