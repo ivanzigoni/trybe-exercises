@@ -43,3 +43,15 @@ expect(inputEmail).toHaveTextContent('');
 expect(inputEmail).toHaveValue('');
 
 })
+
+test('Se botão OK BUTTON está funcionando', () => {
+  const { getByTestId, getByText } = render(<App />);
+
+  const btnOk = getByTestId('btn-ok');
+  
+  fireEvent.click(btnOk);
+  
+  const output = getByText('OK, RAPAZ');
+  
+  expect(output).toBeInTheDocument();
+})

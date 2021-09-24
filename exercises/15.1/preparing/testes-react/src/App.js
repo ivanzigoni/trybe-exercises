@@ -9,6 +9,7 @@
       this.state = {
         email: '',
         saveEmail: '',
+        ok: false,
       };
     }
   
@@ -21,7 +22,8 @@
     }
   
     render() {
-      const { email, saveEmail } = this.state;
+      const { email, saveEmail, ok } = this.state;
+      if (ok) return <h1>OK, RAPAZ</h1>
       return (
         <div className="App">
           <label htmlFor="id-email">
@@ -40,6 +42,13 @@
             value="Enviar"
             onClick={() => this.changeSaveEmail(email)}
           />
+          <button
+          type="button"
+          data-testid="btn-ok"
+          onClick={ () => {
+            this.setState({ ok: true })
+          }}
+          >OK BUTTON</button>
           <input id="btn-id" type="button" value="Voltar" />
           <ValidEmail email={saveEmail}/>
         </div>
