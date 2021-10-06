@@ -17,3 +17,5 @@ Head file named after the block number (dot) module number. Inside, two folders 
 *note that some modules may not have preparing exercises.*
 
 Some other exercises that come from forked repositories can be found [here](https://github.com/ivanzigoni?tab=repositories).
+I'm a student at [Trybe](https://www.betrybe.com/);
+Contact me @*ivanzigonipires.11@gmail.com*;
