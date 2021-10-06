@@ -14,6 +14,6 @@ Head file named after the block number (dot) module number. Inside, two folders 
  ┃ ┣ 📜script.js<br>
  ┃ ┗ 📜style.css<br>
  
-*note that some modules may not have preparing exercises*
+*note that some modules may not have preparing exercises.*
 
-Some other exercises that come from forked repositories can be found [Here](https://github.com/ivanzigoni?tab=repositories);
+Some other exercises that come from forked repositories can be found [here](https://github.com/ivanzigoni?tab=repositories).
