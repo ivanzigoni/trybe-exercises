@@ -18,4 +18,4 @@ Head file named after the block number (dot) module number. Inside, two folders 
 
 Some other exercises that come from forked repositories can be found [here](https://github.com/ivanzigoni?tab=repositories). <br>
 I'm a student at [Trybe](https://www.betrybe.com/); <br>
-Contact me @*ivanzigonipires.11@gmail.com*;
+Contact me at *ivanzigonipires.11@gmail.com*;
