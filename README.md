@@ -4,15 +4,15 @@ From block 6 module 3 and beyond, the files will be structured this way:
 
 Head file named after the block number (dot) module number. Inside, two folders which are "preparing" for fixation exercises embedded within the course's explanation and "exercise" for exercises after explanation. For example:
 
-📦6.3
- ┣ 📂exercise
- ┃ ┣ 📜index.html
- ┃ ┣ 📜script.js
- ┃ ┗ 📜style.css
- ┗ 📂preparing
- ┃ ┣ 📜index.html
- ┃ ┣ 📜script.js
- ┃ ┗ 📜style.css
+📦6.3<br>
+ ┣ 📂exercise<br>
+ ┃ ┣ 📜index.html<br>
+ ┃ ┣ 📜script.js<br>
+ ┃ ┗ 📜style.css<br>
+ ┗ 📂preparing<br>
+ ┃ ┣ 📜index.html<br>
+ ┃ ┣ 📜script.js<br>
+ ┃ ┗ 📜style.css<br>
  
 *note that some modules may not have preparing exercises*
 
